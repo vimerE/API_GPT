@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GPT API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+            <h1 class="text-center text-white mt-4">GPT <span class="text-warning">API</span></h1>
+            <div class="mb-3">
+                <label for="result" class="form-label text-white">Respuestas</label>
+                <textarea class="form-control" id="result" placeholder="Respuesta de Brenda IA" height="70%" rows="15" disabled></textarea>
+            </div>
+    
+            <div class="mb-3">
+                <label for="result" class="form-label text-white">Preguntas</label>
+                <textarea class="form-control" id="inputQuestion" placeholder="Ingresa tu pregunta" height="70%" weight="70%"></textarea disabled>
+            </div>
+            <input type="submit" class="form-control btn btn-warning" name="btnQuestion" id="btnQuestion" value="Preguntar" onclick="SendQuestion(event)">
+    </div>
+
+
+    <!--textarea id="result" rows="10" placeholder="Respuesta de Brenda IA" style="height: 70%;"></textarea-->
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
